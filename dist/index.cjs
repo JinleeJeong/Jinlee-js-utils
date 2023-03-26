@@ -22,6 +22,8 @@ var src_exports = {};
 __export(src_exports, {
   add: () => add,
   divide: () => divide,
+  formatNumberToKorean: () => formatNumberToKorean,
+  getDiscountedPrice: () => getDiscountedPrice,
   multiply: () => multiply,
   subtract: () => subtract
 });
@@ -39,5 +41,11 @@ function multiply(a, b) {
 }
 function divide(a, b) {
   return a / b;
+}
+function formatNumberToKorean(value) {
+  return new Intl.NumberFormat("ko-KR").format(value);
+}
+function getDiscountedPrice(value, rate) {
+  return value - value * (rate / 100);
 }
 //# sourceMappingURL=index.cjs.map

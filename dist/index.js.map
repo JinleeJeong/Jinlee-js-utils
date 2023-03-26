@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../src/math/index.ts"],
-  "sourcesContent": ["function add(a: number, b: number) {\n  return a + b;\n}\nfunction subtract(a: number, b: number) {\n  return a - b;\n}\nfunction multiply(a: number, b: number) {\n  return a * b;\n}\nfunction divide(a: number, b: number) {\n  return a / b;\n}\n\nexport { add, subtract, multiply, divide };\n"],
-  "mappings": ";AAAA,SAAS,IAAI,GAAW,GAAW;AACjC,SAAO,IAAI;AACb;AACA,SAAS,SAAS,GAAW,GAAW;AACtC,SAAO,IAAI;AACb;AACA,SAAS,SAAS,GAAW,GAAW;AACtC,SAAO,IAAI;AACb;AACA,SAAS,OAAO,GAAW,GAAW;AACpC,SAAO,IAAI;AACb;",
+  "sourcesContent": ["function add(a: number, b: number) {\n  return a + b;\n}\nfunction subtract(a: number, b: number) {\n  return a - b;\n}\nfunction multiply(a: number, b: number) {\n  return a * b;\n}\nfunction divide(a: number, b: number) {\n  return a / b;\n}\n\n/**\n * \uC8FC\uC5B4\uC9C4 \uC22B\uC790\uB97C \uD55C\uAD6D \uC22B\uC790 \uC11C\uC2DD\uC5D0 \uC54C\uB9DE\uC740 \uBB38\uC790\uC5F4\uB85C \uBC14\uAFB8\uC5B4 \uBC18\uD658\n * @param value \uBCC0\uD658\uD560 \uC22B\uC790\n */\nfunction formatNumberToKorean(value: number): string {\n  return new Intl.NumberFormat(\"ko-KR\").format(value);\n}\n\n/**\n * \uD560\uC778 \uAE08\uC561\uC744 \uAD6C\uD558\uB294 \uC720\uD2F8 \uD568\uC218\n * @param value \uC6D0\uAC00\n * @param rate \uD560\uC778\uC728\n * @returns \uD560\uC778\uB41C \uAE08\uC561\n */\nfunction getDiscountedPrice(value: number, rate: number): number {\n  return value - value * (rate / 100);\n}\n\nexport {\n  add,\n  subtract,\n  multiply,\n  divide,\n  formatNumberToKorean,\n  getDiscountedPrice,\n};\n"],
+  "mappings": ";AAAA,SAAS,IAAI,GAAW,GAAW;AACjC,SAAO,IAAI;AACb;AACA,SAAS,SAAS,GAAW,GAAW;AACtC,SAAO,IAAI;AACb;AACA,SAAS,SAAS,GAAW,GAAW;AACtC,SAAO,IAAI;AACb;AACA,SAAS,OAAO,GAAW,GAAW;AACpC,SAAO,IAAI;AACb;AAMA,SAAS,qBAAqB,OAAuB;AACnD,SAAO,IAAI,KAAK,aAAa,OAAO,EAAE,OAAO,KAAK;AACpD;AAQA,SAAS,mBAAmB,OAAe,MAAsB;AAC/D,SAAO,QAAQ,SAAS,OAAO;AACjC;",
   "names": []
 }
