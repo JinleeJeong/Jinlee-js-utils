@@ -4,5 +4,6 @@
   "main": "index.js",
   "repository": "https://github.com/JinleeJeong/js-utils-esm.git",
   "author": "JinleeJeong <pjjr0118@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }

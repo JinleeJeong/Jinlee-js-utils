@@ -1,9 +1,9 @@
-const {
+import {
   add,
   divide,
   multiply,
   subtract,
-} = require("@jinlee/js-utils/src/math/calculator");
+} from "@jinlee/js-utils/src/math/calculator";
 
 // -> npm published 가져온 함수들을 사용하고 결과를 출력한다.
 console.log(add(1, 2));
