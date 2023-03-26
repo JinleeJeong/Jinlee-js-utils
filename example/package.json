@@ -5,6 +5,6 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@jinlee/js-utils": "^0.0.1"
+    "@jinlee/js-utils": "^0.0.2"
   }
 }

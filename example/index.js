@@ -3,7 +3,7 @@ import {
   divide,
   multiply,
   subtract,
-} from "@jinlee/js-utils/src/math/calculator";
+} from "@jinlee/js-utils/src/math/calculator.js";
 
 // -> npm published 가져온 함수들을 사용하고 결과를 출력한다.
 console.log(add(1, 2));

@@ -1,9 +1,15 @@
 {
   "name": "@jinlee/js-utils",
   "version": "0.0.2",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/JinleeJeong/js-utils-esm.git",
   "author": "JinleeJeong <pjjr0118@gmail.com>",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/math/calculator.js",
+      "require": "./src/math/calculator.cjs"
+    }
+  }
 }
