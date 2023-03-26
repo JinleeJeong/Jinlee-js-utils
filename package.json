@@ -1,6 +1,6 @@
 {
   "name": "@jinlee/js-utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "src/math/calculator.js",
   "repository": "https://github.com/JinleeJeong/js-utils-esm.git",
   "author": "JinleeJeong <pjjr0118@gmail.com>",
