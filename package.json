@@ -1,8 +1,27 @@
 {
   "name": "@jinlee/js-utils",
-  "version": "0.0.1",
-  "main": "index.js",
+  "version": "0.0.8",
+  "main": "dist/index.js",
   "repository": "https://github.com/JinleeJeong/js-utils-esm.git",
   "author": "JinleeJeong <pjjr0118@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "yarn clean && yarn build:tsc && yarn build:js",
+    "build:tsc": "yarn tsc --emitDeclarationOnly",
+    "build:js": "node build.js",
+    "clean": "rm -rf dist"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "esbuild": "^0.17.14",
+    "typescript": "^5.0.2"
+  }
 }
