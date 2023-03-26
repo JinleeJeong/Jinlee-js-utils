@@ -1,15 +1,24 @@
 {
   "name": "@jinlee/js-utils",
   "version": "0.0.6",
-  "main": "src/math/calculator.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/JinleeJeong/js-utils-esm.git",
   "author": "JinleeJeong <pjjr0118@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "build": "rm -rf dist esm && yarn build:tsc",
+    "build:tsc": "yarn tsc",
+    "prepack": "yarn build" 
+  },
   "exports": {
     ".": {
-      "import": "./src/math/calculator.js",
-      "require": "./src/math/calculator.cjs"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "typescript": "^5.0.2"
   }
 }
